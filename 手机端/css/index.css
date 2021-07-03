@@ -1,0 +1,354 @@
+* {
+	padding: 0;
+	margin: 0;
+	/* 去掉默认的影响效果的边框 */
+	list-style: none;
+	/* 列表 */
+	text-decoration: none;
+	/* 下划线之类的 */
+	/* color:#33333333 */
+	/* 字体颜色 */
+	font-family: "Microsoft YaHei";
+}
+
+.container {
+	width: 100vw;
+}
+.list {
+	display: flex;
+	/* 弹性布局 */
+	justify-content: space-between;
+	/* 紧靠两边 */
+	flex-wrap: wrap;
+	/* 满了换行 */
+}
+/* 每个栏目尽量用后代选择器 */
+.header {
+	background-color: #fbfbfbfb;
+	/* 作为整体容器，三个弹性布局 */
+	display: flex;
+	justify-content: space-between;
+	/* 控制弹性布局 */
+	padding: 3.6vw 2.8vw;
+	/* 上下 左右 */
+}
+.header .text{
+	padding-top: 2vw;
+}
+.header >imgbox {
+	height: 4.27vw;
+	width: 4.27vw;
+}
+.topbanner{
+	box-shadow: 0 2vw 2vw #f1f0f1;
+}
+
+.imgbox {
+	line-height: 0vw;
+}
+
+.imagebox>img {
+	height: 100%;
+	width: 100%;
+}
+
+.imgbox>img {
+	height: 100%;
+	width: 100%;
+}
+
+.breakline {
+	background-color: #f4f4f4f4;
+	height: 2.67vw;
+}
+
+.title {
+	padding: 2.53vw 0vw;
+	text-align: center;
+	/* 空格大小 */
+	word-spacing: 2.53vw;
+}
+/* 轮播图 */
+.swiper-container{
+	height: 55.87vw;
+}
+.swiper-slide .imgbox{
+	height: 100%;
+	width: 100%;
+}
+.cbrl .item {
+	box-sizing: border-box;
+	/* padding从box扣 */
+	width: 49.8vw;
+	margin-top: 0.4vw;
+	/* 上外边距（上边那条线） */
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 4vw 3.2vw 1.87vw 3.65vw;
+}
+
+.cbrl .list {
+	display: flex;
+	/* 弹性布局 */
+	justify-content: space-between;
+	/* 紧靠两边 */
+	flex-wrap: wrap;
+	/* 满了换行 */
+	background-color: #f5f5f5f5;
+}
+
+/* 价格跟图片在一行:浮动或者弹性布局 */
+.cbrl .name {
+	width: 100%;
+	padding-bottom: 2.67vw;
+}
+
+/* 单行文本截断 */
+.breaktext {
+	white-space: nowrap;
+	/* 不能换行 */
+	overflow: hidden;
+	/* 超出后隐藏 */
+	text-overflow: ellipsis;
+	/* 隐藏后显示三个点 */
+}
+
+.cbrl .imagebox {
+	height: 23.2vw;
+	width: 22.53vw;
+}
+.cbrl .price{
+	color: #C55A5C;
+}
+.topbox1{
+	height: 64.67vw;
+	padding-top: 5.47vw;
+}
+.topbox1 .list .itemcontext {
+	width: 25vw;
+}
+
+.topbox1 .list .itemcontext .imgbox {
+	width: 11.07vw;
+	padding-left: 8.1vw;
+	padding-bottom: 2.93vw;
+	height: 8.27vw;
+	
+}
+
+.topbox1 .list .itemcontext .text {
+	text-align: center;
+	font-size: 3.73vw;
+}
+.middlebanner{
+	margin-top: 4.4vw;
+	border-radius:25px;
+	padding: 0 2.4vw;
+}
+.selection{
+	padding-bottom: 4.67vw;
+}
+.selection .swiper-container .swiper-wrapper{
+	width: 75.47vw;
+	height: 56.67vw;
+	font-size:2.8vw;
+	padding-left: 2.67vw;
+}
+.selection .swiper-container .swiper-wrapper .imagebox{
+	padding-top: 2vw;
+	width: 75.47vw;
+	height: 45.73vw;
+	border-radius:25px;
+	/* padding-bottom: 3.2vw; */
+}
+.selection .swiper-container .swiper-wrapper .imagebox >img{
+	border-radius:10px;
+	/* padding-bottom: 3.2vw; */
+}
+.selection .swiper-container .swiper-wrapper .list{
+	padding: 0 2.67vw;
+	/* padding-right: 23.67vw; */
+	/* padding-bottom: 3.2vw; */
+}
+.youhui{
+	font-size: 2.4vw;
+	padding-left: 2.67vw;
+	color: #99999999;
+}
+.selection .swiper-container .swiper-wrapper .list .price{
+	color:#c55a5c;
+}
+.selection .title{ 
+	padding-left: 16vw;
+}
+/* sale */
+.sale .item {
+	box-sizing: border-box;
+	/* padding从box扣 */
+	width: 33.1vw;
+	margin-top: 0.4vw;
+	/* 上外边距（上边那条线） */
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 0 1.87vw 3.65vw;
+}
+
+.sale .list {
+	display: flex;
+	/* 弹性布局 */
+	justify-content: space-between;
+	/* 紧靠两边 */
+	flex-wrap: wrap;
+	/* 满了换行 */
+	background-color: #f5f5f5f5;
+}
+
+/* 价格跟图片在一行:浮动或者弹性布局 */
+.sale .name {
+	width: 100%;
+	font-size: 3.33vw;
+	padding-bottom: 3.33vw;
+}
+
+/* 单行文本截断 */
+
+.sale .imagebox {
+	height: 30vw;
+	width: 100%;
+}
+.sale .price{
+	color: #C55A5C;
+	padding-bottom: 4.93vw;
+}  
+.middlebox{
+	height: 67.6vw;
+}
+.middlebox .list .item{
+	width: 50vw;
+	height: 67.6vw;
+}
+/* 新品首发 */
+.new .item {
+	hight:62vw;
+	box-sizing: border-box;
+	/* padding从box扣 */
+	width: 49.8vw;
+	margin-top: 0.4vw;
+	/* 上外边距（上边那条线） */
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:1.87vw 3.65vw;
+}
+
+.new .list {
+	display: flex;
+	/* 弹性布局 */
+	justify-content: space-between;
+	/* 紧靠两边 */
+	flex-wrap: wrap;
+	/* 满了换行 */
+	background-color: #f5f5f5f5;
+}
+.item .des{
+	font-size: 2vw;
+	color: #d0d0d0d0;
+	padding-bottom: 3.73vw;
+}
+
+/* 价格跟图片在一行:浮动或者弹性布局 */
+.new .name {
+	width: 100%;
+	padding-bottom: 2.27vw;
+}
+
+/* 单行文本截断 */
+
+.new .imagebox {
+	height: 40.27vw;
+	width: 40vw;
+}
+.new .price{
+	color: #C55A5C;
+	padding-bottom: 4.4vw;
+}  
+/* 推荐*/
+.recommand .item {
+	hight:62vw;
+	box-sizing: border-box;
+	/* padding从box扣 */
+	width: 49.8vw;
+	margin-top: 0.4vw;
+	/* 上外边距（上边那条线） */
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:1.87vw 3.65vw;
+}
+
+.recommand .list {
+	display: flex;
+	/* 弹性布局 */
+	justify-content: space-between;
+	/* 紧靠两边 */
+	flex-wrap: wrap;
+	/* 满了换行 */
+	background-color: #f5f5f5f5;
+}
+.recommand .des{
+	font-size: 2vw;
+	color: #d0d0d0d0;
+	padding-bottom: 3.73vw;
+}
+
+/* 价格跟图片在一行:浮动或者弹性布局 */
+.recommand .name {
+	width: 100%;
+	padding-bottom: 2.27vw;
+}
+
+/* 单行文本截断 */
+
+.recommand .imagebox {
+	height: 40vw;
+	/* width: 40vw; */
+}
+.recommand .title {
+	padding-left: 16vw;
+	/* width: 40vw; */
+}
+.recommand .price{
+	color: #C55A5C;
+	padding-bottom: 4.4vw;
+}  
+.bottombox {
+	height: 12.93vw;
+	background-color: #fbfbfb;
+}
+
+.bottombox .list .item {
+	width: 20vw;
+}
+
+.bottombox .list .item .imgbox {
+	height: 6vw;
+	width: 6vw;
+	padding-left: 7vw;
+	padding-top: 2.53vw;
+}
+
+.bottombox .list .item .text {
+	text-align: center;
+}
+
+.bottombox .list .item .textred {
+	text-align: center;
+	color: #7f2a2b;
+}
+/* 行高line-height:22px */
